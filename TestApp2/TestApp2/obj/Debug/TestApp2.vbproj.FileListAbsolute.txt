@@ -1,0 +1,12 @@
+C:\Users\nagata\source\repos\TestApp2\TestApp2\obj\Debug\TestApp2.Form1.resources
+C:\Users\nagata\source\repos\TestApp2\TestApp2\obj\Debug\TestApp2.Resources.resources
+C:\Users\nagata\source\repos\TestApp2\TestApp2\obj\Debug\TestApp2.vbproj.GenerateResource.cache
+C:\Users\nagata\source\repos\TestApp2\TestApp2\obj\Debug\TestApp2.vbproj.CoreCompileInputs.cache
+C:\Users\nagata\source\repos\TestApp2\TestApp2\bin\Debug\TestApp2.exe.config
+C:\Users\nagata\source\repos\TestApp2\TestApp2\bin\Debug\TestApp2.exe
+C:\Users\nagata\source\repos\TestApp2\TestApp2\bin\Debug\TestApp2.pdb
+C:\Users\nagata\source\repos\TestApp2\TestApp2\bin\Debug\TestApp2.xml
+C:\Users\nagata\source\repos\TestApp2\TestApp2\obj\Debug\TestApp2.exe
+C:\Users\nagata\source\repos\TestApp2\TestApp2\obj\Debug\TestApp2.xml
+C:\Users\nagata\source\repos\TestApp2\TestApp2\obj\Debug\TestApp2.pdb
+C:\Users\nagata\source\repos\TestApp2\TestApp2\obj\Debug\TestApp2.vbprojAssemblyReference.cache
