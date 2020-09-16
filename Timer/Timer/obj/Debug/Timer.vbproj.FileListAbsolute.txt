@@ -1,0 +1,12 @@
+C:\Users\nagata\source\repos\Timer\Timer\bin\Debug\Timer.exe.config
+C:\Users\nagata\source\repos\Timer\Timer\bin\Debug\Timer.exe
+C:\Users\nagata\source\repos\Timer\Timer\bin\Debug\Timer.pdb
+C:\Users\nagata\source\repos\Timer\Timer\bin\Debug\Timer.xml
+C:\Users\nagata\source\repos\Timer\Timer\obj\Debug\Timer.vbprojAssemblyReference.cache
+C:\Users\nagata\source\repos\Timer\Timer\obj\Debug\Timer.FormTimer.resources
+C:\Users\nagata\source\repos\Timer\Timer\obj\Debug\Timer.Resources.resources
+C:\Users\nagata\source\repos\Timer\Timer\obj\Debug\Timer.vbproj.GenerateResource.cache
+C:\Users\nagata\source\repos\Timer\Timer\obj\Debug\Timer.vbproj.CoreCompileInputs.cache
+C:\Users\nagata\source\repos\Timer\Timer\obj\Debug\Timer.exe
+C:\Users\nagata\source\repos\Timer\Timer\obj\Debug\Timer.xml
+C:\Users\nagata\source\repos\Timer\Timer\obj\Debug\Timer.pdb
