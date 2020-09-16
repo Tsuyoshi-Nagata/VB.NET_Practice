@@ -1,0 +1,12 @@
+C:\Users\nagata\source\repos\Fusen\Fusen\bin\Debug\Fusen.exe.config
+C:\Users\nagata\source\repos\Fusen\Fusen\bin\Debug\Fusen.exe
+C:\Users\nagata\source\repos\Fusen\Fusen\bin\Debug\Fusen.pdb
+C:\Users\nagata\source\repos\Fusen\Fusen\bin\Debug\Fusen.xml
+C:\Users\nagata\source\repos\Fusen\Fusen\obj\Debug\Fusen.vbprojAssemblyReference.cache
+C:\Users\nagata\source\repos\Fusen\Fusen\obj\Debug\Fusen.FormFusen.resources
+C:\Users\nagata\source\repos\Fusen\Fusen\obj\Debug\Fusen.Resources.resources
+C:\Users\nagata\source\repos\Fusen\Fusen\obj\Debug\Fusen.vbproj.GenerateResource.cache
+C:\Users\nagata\source\repos\Fusen\Fusen\obj\Debug\Fusen.vbproj.CoreCompileInputs.cache
+C:\Users\nagata\source\repos\Fusen\Fusen\obj\Debug\Fusen.exe
+C:\Users\nagata\source\repos\Fusen\Fusen\obj\Debug\Fusen.xml
+C:\Users\nagata\source\repos\Fusen\Fusen\obj\Debug\Fusen.pdb
