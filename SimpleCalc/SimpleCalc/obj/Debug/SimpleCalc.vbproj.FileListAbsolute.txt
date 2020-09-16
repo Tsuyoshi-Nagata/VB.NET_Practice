@@ -1,0 +1,12 @@
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\bin\Debug\SimpleCalc.exe.config
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\bin\Debug\SimpleCalc.exe
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\bin\Debug\SimpleCalc.pdb
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\bin\Debug\SimpleCalc.xml
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.vbprojAssemblyReference.cache
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.Form1.resources
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.Resources.resources
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.vbproj.GenerateResource.cache
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.vbproj.CoreCompileInputs.cache
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.exe
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.xml
+C:\Users\nagata\source\repos\SimpleCalc\SimpleCalc\obj\Debug\SimpleCalc.pdb
