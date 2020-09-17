@@ -1,0 +1,12 @@
+C:\Users\nagata\source\repos\Uranai\Uranai\bin\Debug\Uranai.exe.config
+C:\Users\nagata\source\repos\Uranai\Uranai\bin\Debug\Uranai.exe
+C:\Users\nagata\source\repos\Uranai\Uranai\bin\Debug\Uranai.pdb
+C:\Users\nagata\source\repos\Uranai\Uranai\bin\Debug\Uranai.xml
+C:\Users\nagata\source\repos\Uranai\Uranai\obj\Debug\Uranai.vbprojAssemblyReference.cache
+C:\Users\nagata\source\repos\Uranai\Uranai\obj\Debug\Uranai.FormUranai.resources
+C:\Users\nagata\source\repos\Uranai\Uranai\obj\Debug\Uranai.Resources.resources
+C:\Users\nagata\source\repos\Uranai\Uranai\obj\Debug\Uranai.vbproj.GenerateResource.cache
+C:\Users\nagata\source\repos\Uranai\Uranai\obj\Debug\Uranai.vbproj.CoreCompileInputs.cache
+C:\Users\nagata\source\repos\Uranai\Uranai\obj\Debug\Uranai.exe
+C:\Users\nagata\source\repos\Uranai\Uranai\obj\Debug\Uranai.xml
+C:\Users\nagata\source\repos\Uranai\Uranai\obj\Debug\Uranai.pdb
