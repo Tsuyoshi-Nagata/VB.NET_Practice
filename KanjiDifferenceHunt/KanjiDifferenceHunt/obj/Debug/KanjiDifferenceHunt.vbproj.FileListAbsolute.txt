@@ -1,0 +1,12 @@
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\bin\Debug\KanjiDifferenceHunt.exe.config
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\bin\Debug\KanjiDifferenceHunt.exe
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\bin\Debug\KanjiDifferenceHunt.pdb
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\bin\Debug\KanjiDifferenceHunt.xml
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\obj\Debug\KanjiDifferenceHunt.vbprojAssemblyReference.cache
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\obj\Debug\KanjiDifferenceHunt.FormGame.resources
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\obj\Debug\KanjiDifferenceHunt.Resources.resources
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\obj\Debug\KanjiDifferenceHunt.vbproj.GenerateResource.cache
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\obj\Debug\KanjiDifferenceHunt.vbproj.CoreCompileInputs.cache
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\obj\Debug\KanjiDifferenceHunt.exe
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\obj\Debug\KanjiDifferenceHunt.xml
+C:\Users\nagata\source\repos\KanjiDifferenceHunt\KanjiDifferenceHunt\obj\Debug\KanjiDifferenceHunt.pdb
