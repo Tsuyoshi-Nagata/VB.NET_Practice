@@ -1,0 +1,12 @@
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\bin\Debug\MoveCircle.exe.config
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\bin\Debug\MoveCircle.exe
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\bin\Debug\MoveCircle.pdb
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\bin\Debug\MoveCircle.xml
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\obj\Debug\MoveCircle.vbprojAssemblyReference.cache
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\obj\Debug\MoveCircle.FormBallGame.resources
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\obj\Debug\MoveCircle.Resources.resources
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\obj\Debug\MoveCircle.vbproj.GenerateResource.cache
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\obj\Debug\MoveCircle.vbproj.CoreCompileInputs.cache
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\obj\Debug\MoveCircle.exe
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\obj\Debug\MoveCircle.xml
+C:\Users\nagata\source\repos\MoveCircle\MoveCircle\obj\Debug\MoveCircle.pdb
