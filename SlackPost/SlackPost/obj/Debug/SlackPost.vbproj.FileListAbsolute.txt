@@ -1,0 +1,12 @@
+C:\Users\nagata\source\repos\SlackPost\SlackPost\bin\Debug\SlackPost.exe.config
+C:\Users\nagata\source\repos\SlackPost\SlackPost\bin\Debug\SlackPost.exe
+C:\Users\nagata\source\repos\SlackPost\SlackPost\bin\Debug\SlackPost.pdb
+C:\Users\nagata\source\repos\SlackPost\SlackPost\bin\Debug\SlackPost.xml
+C:\Users\nagata\source\repos\SlackPost\SlackPost\obj\Debug\SlackPost.vbprojAssemblyReference.cache
+C:\Users\nagata\source\repos\SlackPost\SlackPost\obj\Debug\SlackPost.FormSlackPost.resources
+C:\Users\nagata\source\repos\SlackPost\SlackPost\obj\Debug\SlackPost.Resources.resources
+C:\Users\nagata\source\repos\SlackPost\SlackPost\obj\Debug\SlackPost.vbproj.GenerateResource.cache
+C:\Users\nagata\source\repos\SlackPost\SlackPost\obj\Debug\SlackPost.vbproj.CoreCompileInputs.cache
+C:\Users\nagata\source\repos\SlackPost\SlackPost\obj\Debug\SlackPost.exe
+C:\Users\nagata\source\repos\SlackPost\SlackPost\obj\Debug\SlackPost.xml
+C:\Users\nagata\source\repos\SlackPost\SlackPost\obj\Debug\SlackPost.pdb
