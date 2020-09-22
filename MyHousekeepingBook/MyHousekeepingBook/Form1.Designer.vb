@@ -50,11 +50,13 @@ Partial Class Form1
         Me.品名DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.金額DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.備考DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CategoryDataSet1 = New MyHousekeepingBook.CategoryDataSet()
         Me.mainMenu.SuspendLayout()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyDataTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CategoryDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mainMenu
@@ -63,7 +65,7 @@ Partial Class Form1
         Me.mainMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ファイルFToolStripMenuItem, Me.編集EToolStripMenuItem, Me.表示VToolStripMenuItem, Me.ヘルプHToolStripMenuItem})
         Me.mainMenu.Location = New System.Drawing.Point(0, 0)
         Me.mainMenu.Name = "mainMenu"
-        Me.mainMenu.Size = New System.Drawing.Size(800, 30)
+        Me.mainMenu.Size = New System.Drawing.Size(800, 28)
         Me.mainMenu.TabIndex = 0
         Me.mainMenu.Text = "MenuStrip1"
         '
@@ -71,7 +73,7 @@ Partial Class Form1
         '
         Me.ファイルFToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.保存SToolStripMenuItem, Me.ToolStripSeparator1, Me.終了XToolStripMenuItem})
         Me.ファイルFToolStripMenuItem.Name = "ファイルFToolStripMenuItem"
-        Me.ファイルFToolStripMenuItem.Size = New System.Drawing.Size(82, 26)
+        Me.ファイルFToolStripMenuItem.Size = New System.Drawing.Size(82, 24)
         Me.ファイルFToolStripMenuItem.Text = "ファイル(&F)"
         '
         '保存SToolStripMenuItem
@@ -88,21 +90,21 @@ Partial Class Form1
         '終了XToolStripMenuItem
         '
         Me.終了XToolStripMenuItem.Name = "終了XToolStripMenuItem"
-        Me.終了XToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
+        Me.終了XToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.終了XToolStripMenuItem.Text = "終了(&X)"
         '
         '編集EToolStripMenuItem
         '
         Me.編集EToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.追加AToolStripMenuItem, Me.変更CToolStripMenuItem, Me.削除DToolStripMenuItem})
         Me.編集EToolStripMenuItem.Name = "編集EToolStripMenuItem"
-        Me.編集EToolStripMenuItem.Size = New System.Drawing.Size(71, 26)
+        Me.編集EToolStripMenuItem.Size = New System.Drawing.Size(71, 24)
         Me.編集EToolStripMenuItem.Text = "編集(&E)"
         '
         '追加AToolStripMenuItem
         '
         Me.追加AToolStripMenuItem.Name = "追加AToolStripMenuItem"
-        Me.追加AToolStripMenuItem.Size = New System.Drawing.Size(163, 26)
-        Me.追加AToolStripMenuItem.Text = "追加(＆A)"
+        Me.追加AToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.追加AToolStripMenuItem.Text = "追加(&A)"
         '
         '変更CToolStripMenuItem
         '
@@ -252,6 +254,11 @@ Partial Class Form1
         Me.備考DataGridViewTextBoxColumn.Name = "備考DataGridViewTextBoxColumn"
         Me.備考DataGridViewTextBoxColumn.Width = 125
         '
+        'CategoryDataSet1
+        '
+        Me.CategoryDataSet1.DataSetName = "CategoryDataSet"
+        Me.CategoryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
@@ -272,6 +279,7 @@ Partial Class Form1
         CType(Me.MoneyDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MoneyDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MoneyDataTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CategoryDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -304,4 +312,5 @@ Partial Class Form1
     Friend WithEvents 備考DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents MoneyDataTableBindingSource As BindingSource
     Friend WithEvents MoneyDataSetBindingSource As BindingSource
+    Friend WithEvents CategoryDataSet1 As CategoryDataSet
 End Class
