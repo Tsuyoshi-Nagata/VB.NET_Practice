@@ -67,7 +67,7 @@ Partial Class Form1
         Me.mainMenu.Location = New System.Drawing.Point(0, 0)
         Me.mainMenu.Name = "mainMenu"
         Me.mainMenu.Padding = New System.Windows.Forms.Padding(10, 3, 0, 3)
-        Me.mainMenu.Size = New System.Drawing.Size(1300, 44)
+        Me.mainMenu.Size = New System.Drawing.Size(1300, 42)
         Me.mainMenu.TabIndex = 0
         Me.mainMenu.Text = "MenuStrip1"
         '
@@ -99,7 +99,7 @@ Partial Class Form1
         '
         Me.編集EToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.追加AToolStripMenuItem, Me.変更CToolStripMenuItem, Me.削除DToolStripMenuItem})
         Me.編集EToolStripMenuItem.Name = "編集EToolStripMenuItem"
-        Me.編集EToolStripMenuItem.Size = New System.Drawing.Size(109, 36)
+        Me.編集EToolStripMenuItem.Size = New System.Drawing.Size(109, 38)
         Me.編集EToolStripMenuItem.Text = "編集(&E)"
         '
         '追加AToolStripMenuItem
@@ -111,13 +111,13 @@ Partial Class Form1
         '変更CToolStripMenuItem
         '
         Me.変更CToolStripMenuItem.Name = "変更CToolStripMenuItem"
-        Me.変更CToolStripMenuItem.Size = New System.Drawing.Size(262, 44)
+        Me.変更CToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
         Me.変更CToolStripMenuItem.Text = "変更(&C)"
         '
         '削除DToolStripMenuItem
         '
         Me.削除DToolStripMenuItem.Name = "削除DToolStripMenuItem"
-        Me.削除DToolStripMenuItem.Size = New System.Drawing.Size(262, 44)
+        Me.削除DToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
         Me.削除DToolStripMenuItem.Text = "削除（&D）"
         '
         '表示VToolStripMenuItem

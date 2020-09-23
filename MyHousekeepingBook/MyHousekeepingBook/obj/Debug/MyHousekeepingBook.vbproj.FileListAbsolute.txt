@@ -11,3 +11,16 @@ C:\Users\nagata\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyH
 C:\Users\nagata\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.exe
 C:\Users\nagata\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.xml
 C:\Users\nagata\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.pdb
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\bin\Debug\MyHousekeepingBook.exe.config
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\bin\Debug\MyHousekeepingBook.exe
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\bin\Debug\MyHousekeepingBook.pdb
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\bin\Debug\MyHousekeepingBook.xml
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.vbprojAssemblyReference.cache
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.Form1.resources
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.ItemForm.resources
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.Resources.resources
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.vbproj.GenerateResource.cache
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.vbproj.CoreCompileInputs.cache
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.exe
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.xml
+C:\Users\johns\source\repos\MyHousekeepingBook\MyHousekeepingBook\obj\Debug\MyHousekeepingBook.pdb
