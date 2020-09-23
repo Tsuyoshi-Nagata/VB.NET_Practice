@@ -44,4 +44,32 @@
     Private Sub buttonEnd_Click(sender As Object, e As EventArgs) Handles buttonEnd.Click
         Me.Close()
     End Sub
+
+    Private Sub SaveData()
+        Dim path As String = "MoneyData.csv"
+        Dim strData As String
+        Dim sw As System.IO.StreamWriter _
+            = New System.IO.StreamWriter(path, False, System.Text.Encoding.Default)
+
+        For Each drMoney As MoneyDataSet.moneyDataTableRow
+                In MoneyDataSet.moneyDataTable
+            strData = drMoney.日付.ToShortDateString() _
+                + "," + drMoney.分類 _
+                + "," + drMoney.品名 _
+                + "," + drMoney.金額.ToString() _
+                + "," + drMoney.備考
+            sw.WriteLine(strData)
+
+        Next
+        sw.Close()
+
+    End Sub
+
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        SaveData()
+    End Sub
+
+    Private Sub 保存SToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 保存SToolStripMenuItem.Click
+        SaveData()
+    End Sub
 End Class
