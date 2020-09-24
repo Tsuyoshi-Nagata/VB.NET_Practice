@@ -51,23 +51,37 @@ Partial Class Form1
         Me.buttonDelete = New System.Windows.Forms.Button()
         Me.buttonEnd = New System.Windows.Forms.Button()
         Me.CategoryDataSet1 = New MyHousekeepingBook.CategoryDataSet()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.tabList = New System.Windows.Forms.TabPage()
+        Me.tabSummary = New System.Windows.Forms.TabPage()
+        Me.SumDgv = New System.Windows.Forms.DataGridView()
+        Me.SummaryDataSet = New MyHousekeepingBook.SummaryDataSet()
+        Me.SumDataTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.日付DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.入金合計DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.出金合計DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.mainMenu.SuspendLayout()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyDataTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CategoryDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabControl1.SuspendLayout()
+        Me.tabList.SuspendLayout()
+        Me.tabSummary.SuspendLayout()
+        CType(Me.SumDgv, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SummaryDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SumDataTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mainMenu
         '
-        Me.mainMenu.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
         Me.mainMenu.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.mainMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ファイルFToolStripMenuItem, Me.編集EToolStripMenuItem, Me.表示VToolStripMenuItem, Me.ヘルプHToolStripMenuItem})
         Me.mainMenu.Location = New System.Drawing.Point(0, 0)
         Me.mainMenu.Name = "mainMenu"
         Me.mainMenu.Padding = New System.Windows.Forms.Padding(10, 3, 0, 3)
-        Me.mainMenu.Size = New System.Drawing.Size(1300, 42)
+        Me.mainMenu.Size = New System.Drawing.Size(1312, 42)
         Me.mainMenu.TabIndex = 0
         Me.mainMenu.Text = "MenuStrip1"
         '
@@ -75,13 +89,13 @@ Partial Class Form1
         '
         Me.ファイルFToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.保存SToolStripMenuItem, Me.ToolStripSeparator1, Me.終了XToolStripMenuItem})
         Me.ファイルFToolStripMenuItem.Name = "ファイルFToolStripMenuItem"
-        Me.ファイルFToolStripMenuItem.Size = New System.Drawing.Size(129, 38)
+        Me.ファイルFToolStripMenuItem.Size = New System.Drawing.Size(129, 36)
         Me.ファイルFToolStripMenuItem.Text = "ファイル(&F)"
         '
         '保存SToolStripMenuItem
         '
         Me.保存SToolStripMenuItem.Name = "保存SToolStripMenuItem"
-        Me.保存SToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
+        Me.保存SToolStripMenuItem.Size = New System.Drawing.Size(225, 44)
         Me.保存SToolStripMenuItem.Text = "保存(&S)"
         '
         'ToolStripSeparator1
@@ -99,7 +113,7 @@ Partial Class Form1
         '
         Me.編集EToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.追加AToolStripMenuItem, Me.変更CToolStripMenuItem, Me.削除DToolStripMenuItem})
         Me.編集EToolStripMenuItem.Name = "編集EToolStripMenuItem"
-        Me.編集EToolStripMenuItem.Size = New System.Drawing.Size(109, 38)
+        Me.編集EToolStripMenuItem.Size = New System.Drawing.Size(109, 36)
         Me.編集EToolStripMenuItem.Text = "編集(&E)"
         '
         '追加AToolStripMenuItem
@@ -111,13 +125,13 @@ Partial Class Form1
         '変更CToolStripMenuItem
         '
         Me.変更CToolStripMenuItem.Name = "変更CToolStripMenuItem"
-        Me.変更CToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
+        Me.変更CToolStripMenuItem.Size = New System.Drawing.Size(262, 44)
         Me.変更CToolStripMenuItem.Text = "変更(&C)"
         '
         '削除DToolStripMenuItem
         '
         Me.削除DToolStripMenuItem.Name = "削除DToolStripMenuItem"
-        Me.削除DToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
+        Me.削除DToolStripMenuItem.Size = New System.Drawing.Size(262, 44)
         Me.削除DToolStripMenuItem.Text = "削除（&D）"
         '
         '表示VToolStripMenuItem
@@ -158,12 +172,12 @@ Partial Class Form1
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.日付DataGridViewTextBoxColumn, Me.分類DataGridViewTextBoxColumn, Me.品名DataGridViewTextBoxColumn, Me.金額DataGridViewTextBoxColumn, Me.備考DataGridViewTextBoxColumn})
         Me.dgv.DataSource = Me.MoneyDataTableBindingSource
-        Me.dgv.Location = New System.Drawing.Point(20, 67)
-        Me.dgv.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.dgv.Location = New System.Drawing.Point(3, 8)
+        Me.dgv.Margin = New System.Windows.Forms.Padding(5)
         Me.dgv.Name = "dgv"
         Me.dgv.RowHeadersWidth = 51
         Me.dgv.RowTemplate.Height = 24
-        Me.dgv.Size = New System.Drawing.Size(1261, 568)
+        Me.dgv.Size = New System.Drawing.Size(1253, 568)
         Me.dgv.TabIndex = 1
         '
         '日付DataGridViewTextBoxColumn
@@ -223,40 +237,40 @@ Partial Class Form1
         '
         'buttonAdd
         '
-        Me.buttonAdd.Location = New System.Drawing.Point(34, 664)
-        Me.buttonAdd.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.buttonAdd.Location = New System.Drawing.Point(17, 605)
+        Me.buttonAdd.Margin = New System.Windows.Forms.Padding(5)
         Me.buttonAdd.Name = "buttonAdd"
-        Me.buttonAdd.Size = New System.Drawing.Size(122, 37)
+        Me.buttonAdd.Size = New System.Drawing.Size(114, 37)
         Me.buttonAdd.TabIndex = 2
         Me.buttonAdd.Text = "追加"
         Me.buttonAdd.UseVisualStyleBackColor = True
         '
         'buttonChange
         '
-        Me.buttonChange.Location = New System.Drawing.Point(180, 664)
-        Me.buttonChange.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.buttonChange.Location = New System.Drawing.Point(163, 605)
+        Me.buttonChange.Margin = New System.Windows.Forms.Padding(5)
         Me.buttonChange.Name = "buttonChange"
-        Me.buttonChange.Size = New System.Drawing.Size(122, 37)
+        Me.buttonChange.Size = New System.Drawing.Size(114, 37)
         Me.buttonChange.TabIndex = 2
         Me.buttonChange.Text = "変更"
         Me.buttonChange.UseVisualStyleBackColor = True
         '
         'buttonDelete
         '
-        Me.buttonDelete.Location = New System.Drawing.Point(332, 664)
-        Me.buttonDelete.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.buttonDelete.Location = New System.Drawing.Point(315, 605)
+        Me.buttonDelete.Margin = New System.Windows.Forms.Padding(5)
         Me.buttonDelete.Name = "buttonDelete"
-        Me.buttonDelete.Size = New System.Drawing.Size(122, 37)
+        Me.buttonDelete.Size = New System.Drawing.Size(114, 37)
         Me.buttonDelete.TabIndex = 2
         Me.buttonDelete.Text = "削除"
         Me.buttonDelete.UseVisualStyleBackColor = True
         '
         'buttonEnd
         '
-        Me.buttonEnd.Location = New System.Drawing.Point(1055, 664)
-        Me.buttonEnd.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.buttonEnd.Location = New System.Drawing.Point(1038, 605)
+        Me.buttonEnd.Margin = New System.Windows.Forms.Padding(5)
         Me.buttonEnd.Name = "buttonEnd"
-        Me.buttonEnd.Size = New System.Drawing.Size(122, 37)
+        Me.buttonEnd.Size = New System.Drawing.Size(114, 37)
         Me.buttonEnd.TabIndex = 2
         Me.buttonEnd.Text = "終了"
         Me.buttonEnd.UseVisualStyleBackColor = True
@@ -266,19 +280,98 @@ Partial Class Form1
         Me.CategoryDataSet1.DataSetName = "CategoryDataSet"
         Me.CategoryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
+        'TabControl1
+        '
+        Me.TabControl1.Controls.Add(Me.tabList)
+        Me.TabControl1.Controls.Add(Me.tabSummary)
+        Me.TabControl1.Location = New System.Drawing.Point(12, 54)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(1280, 775)
+        Me.TabControl1.TabIndex = 3
+        '
+        'tabList
+        '
+        Me.tabList.Controls.Add(Me.dgv)
+        Me.tabList.Controls.Add(Me.buttonEnd)
+        Me.tabList.Controls.Add(Me.buttonAdd)
+        Me.tabList.Controls.Add(Me.buttonDelete)
+        Me.tabList.Controls.Add(Me.buttonChange)
+        Me.tabList.Location = New System.Drawing.Point(8, 39)
+        Me.tabList.Name = "tabList"
+        Me.tabList.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabList.Size = New System.Drawing.Size(1264, 728)
+        Me.tabList.TabIndex = 0
+        Me.tabList.Text = "一覧表示"
+        Me.tabList.UseVisualStyleBackColor = True
+        '
+        'tabSummary
+        '
+        Me.tabSummary.Controls.Add(Me.SumDgv)
+        Me.tabSummary.Location = New System.Drawing.Point(8, 39)
+        Me.tabSummary.Name = "tabSummary"
+        Me.tabSummary.Padding = New System.Windows.Forms.Padding(3)
+        Me.tabSummary.Size = New System.Drawing.Size(1264, 728)
+        Me.tabSummary.TabIndex = 1
+        Me.tabSummary.Text = "集計表示"
+        Me.tabSummary.UseVisualStyleBackColor = True
+        '
+        'SumDgv
+        '
+        Me.SumDgv.AutoGenerateColumns = False
+        Me.SumDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.SumDgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.日付DataGridViewTextBoxColumn1, Me.入金合計DataGridViewTextBoxColumn, Me.出金合計DataGridViewTextBoxColumn})
+        Me.SumDgv.DataSource = Me.SumDataTableBindingSource
+        Me.SumDgv.Location = New System.Drawing.Point(6, 6)
+        Me.SumDgv.Name = "SumDgv"
+        Me.SumDgv.RowHeadersWidth = 82
+        Me.SumDgv.RowTemplate.Height = 33
+        Me.SumDgv.Size = New System.Drawing.Size(1252, 716)
+        Me.SumDgv.TabIndex = 0
+        '
+        'SummaryDataSet
+        '
+        Me.SummaryDataSet.DataSetName = "SummaryDataSet"
+        Me.SummaryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'SumDataTableBindingSource
+        '
+        Me.SumDataTableBindingSource.DataMember = "SumDataTable"
+        Me.SumDataTableBindingSource.DataSource = Me.SummaryDataSet
+        '
+        '日付DataGridViewTextBoxColumn1
+        '
+        Me.日付DataGridViewTextBoxColumn1.DataPropertyName = "日付"
+        Me.日付DataGridViewTextBoxColumn1.HeaderText = "日付"
+        Me.日付DataGridViewTextBoxColumn1.MinimumWidth = 10
+        Me.日付DataGridViewTextBoxColumn1.Name = "日付DataGridViewTextBoxColumn1"
+        Me.日付DataGridViewTextBoxColumn1.Width = 200
+        '
+        '入金合計DataGridViewTextBoxColumn
+        '
+        Me.入金合計DataGridViewTextBoxColumn.DataPropertyName = "入金合計"
+        Me.入金合計DataGridViewTextBoxColumn.HeaderText = "入金合計"
+        Me.入金合計DataGridViewTextBoxColumn.MinimumWidth = 10
+        Me.入金合計DataGridViewTextBoxColumn.Name = "入金合計DataGridViewTextBoxColumn"
+        Me.入金合計DataGridViewTextBoxColumn.Width = 200
+        '
+        '出金合計DataGridViewTextBoxColumn
+        '
+        Me.出金合計DataGridViewTextBoxColumn.DataPropertyName = "出金合計"
+        Me.出金合計DataGridViewTextBoxColumn.HeaderText = "出金合計"
+        Me.出金合計DataGridViewTextBoxColumn.MinimumWidth = 10
+        Me.出金合計DataGridViewTextBoxColumn.Name = "出金合計DataGridViewTextBoxColumn"
+        Me.出金合計DataGridViewTextBoxColumn.Width = 200
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1300, 720)
-        Me.Controls.Add(Me.buttonEnd)
-        Me.Controls.Add(Me.buttonDelete)
-        Me.Controls.Add(Me.buttonChange)
-        Me.Controls.Add(Me.buttonAdd)
-        Me.Controls.Add(Me.dgv)
+        Me.ClientSize = New System.Drawing.Size(1312, 863)
+        Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.mainMenu)
         Me.MainMenuStrip = Me.mainMenu
-        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "Form1"
         Me.Text = "簡易家計簿"
         Me.mainMenu.ResumeLayout(False)
@@ -288,6 +381,12 @@ Partial Class Form1
         CType(Me.MoneyDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MoneyDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CategoryDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabControl1.ResumeLayout(False)
+        Me.tabList.ResumeLayout(False)
+        Me.tabSummary.ResumeLayout(False)
+        CType(Me.SumDgv, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SummaryDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SumDataTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -321,4 +420,13 @@ Partial Class Form1
     Friend WithEvents MoneyDataTableBindingSource As BindingSource
     Friend WithEvents MoneyDataSetBindingSource As BindingSource
     Friend WithEvents CategoryDataSet1 As CategoryDataSet
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents tabList As TabPage
+    Friend WithEvents tabSummary As TabPage
+    Friend WithEvents SumDgv As DataGridView
+    Friend WithEvents 日付DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents 入金合計DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents 出金合計DataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents SumDataTableBindingSource As BindingSource
+    Friend WithEvents SummaryDataSet As SummaryDataSet
 End Class
