@@ -50,38 +50,39 @@ Partial Class Form1
         Me.buttonChange = New System.Windows.Forms.Button()
         Me.buttonDelete = New System.Windows.Forms.Button()
         Me.buttonEnd = New System.Windows.Forms.Button()
-        Me.CategoryDataSet1 = New MyHousekeepingBook.CategoryDataSet()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.tabList = New System.Windows.Forms.TabPage()
         Me.tabSummary = New System.Windows.Forms.TabPage()
         Me.SumDgv = New System.Windows.Forms.DataGridView()
-        Me.SummaryDataSet = New MyHousekeepingBook.SummaryDataSet()
-        Me.SumDataTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CategoryDataSet1 = New MyHousekeepingBook.CategoryDataSet()
         Me.日付DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.入金合計DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.出金合計DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SumDataTableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SummaryDataSet = New MyHousekeepingBook.SummaryDataSet()
         Me.mainMenu.SuspendLayout()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyDataTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MoneyDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CategoryDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.tabList.SuspendLayout()
         Me.tabSummary.SuspendLayout()
         CType(Me.SumDgv, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SummaryDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CategoryDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SumDataTableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SummaryDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'mainMenu
         '
+        Me.mainMenu.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
         Me.mainMenu.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.mainMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ファイルFToolStripMenuItem, Me.編集EToolStripMenuItem, Me.表示VToolStripMenuItem, Me.ヘルプHToolStripMenuItem})
         Me.mainMenu.Location = New System.Drawing.Point(0, 0)
         Me.mainMenu.Name = "mainMenu"
         Me.mainMenu.Padding = New System.Windows.Forms.Padding(10, 3, 0, 3)
-        Me.mainMenu.Size = New System.Drawing.Size(1312, 42)
+        Me.mainMenu.Size = New System.Drawing.Size(1312, 44)
         Me.mainMenu.TabIndex = 0
         Me.mainMenu.Text = "MenuStrip1"
         '
@@ -138,19 +139,19 @@ Partial Class Form1
         '
         Me.表示VToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.一覧表示ToolStripMenuItem, Me.集計表示SToolStripMenuItem})
         Me.表示VToolStripMenuItem.Name = "表示VToolStripMenuItem"
-        Me.表示VToolStripMenuItem.Size = New System.Drawing.Size(112, 36)
+        Me.表示VToolStripMenuItem.Size = New System.Drawing.Size(112, 38)
         Me.表示VToolStripMenuItem.Text = "表示(&V)"
         '
         '一覧表示ToolStripMenuItem
         '
         Me.一覧表示ToolStripMenuItem.Name = "一覧表示ToolStripMenuItem"
-        Me.一覧表示ToolStripMenuItem.Size = New System.Drawing.Size(272, 44)
+        Me.一覧表示ToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
         Me.一覧表示ToolStripMenuItem.Text = "一覧表示(&L)"
         '
         '集計表示SToolStripMenuItem
         '
         Me.集計表示SToolStripMenuItem.Name = "集計表示SToolStripMenuItem"
-        Me.集計表示SToolStripMenuItem.Size = New System.Drawing.Size(272, 44)
+        Me.集計表示SToolStripMenuItem.Size = New System.Drawing.Size(359, 44)
         Me.集計表示SToolStripMenuItem.Text = "集計表示(&S)"
         '
         'ヘルプHToolStripMenuItem
@@ -275,11 +276,6 @@ Partial Class Form1
         Me.buttonEnd.Text = "終了"
         Me.buttonEnd.UseVisualStyleBackColor = True
         '
-        'CategoryDataSet1
-        '
-        Me.CategoryDataSet1.DataSetName = "CategoryDataSet"
-        Me.CategoryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.tabList)
@@ -329,15 +325,10 @@ Partial Class Form1
         Me.SumDgv.Size = New System.Drawing.Size(1252, 716)
         Me.SumDgv.TabIndex = 0
         '
-        'SummaryDataSet
+        'CategoryDataSet1
         '
-        Me.SummaryDataSet.DataSetName = "SummaryDataSet"
-        Me.SummaryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'SumDataTableBindingSource
-        '
-        Me.SumDataTableBindingSource.DataMember = "SumDataTable"
-        Me.SumDataTableBindingSource.DataSource = Me.SummaryDataSet
+        Me.CategoryDataSet1.DataSetName = "CategoryDataSet"
+        Me.CategoryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         '日付DataGridViewTextBoxColumn1
         '
@@ -363,6 +354,16 @@ Partial Class Form1
         Me.出金合計DataGridViewTextBoxColumn.Name = "出金合計DataGridViewTextBoxColumn"
         Me.出金合計DataGridViewTextBoxColumn.Width = 200
         '
+        'SumDataTableBindingSource
+        '
+        Me.SumDataTableBindingSource.DataMember = "SumDataTable"
+        Me.SumDataTableBindingSource.DataSource = Me.SummaryDataSet
+        '
+        'SummaryDataSet
+        '
+        Me.SummaryDataSet.DataSetName = "SummaryDataSet"
+        Me.SummaryDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 24.0!)
@@ -380,13 +381,13 @@ Partial Class Form1
         CType(Me.MoneyDataTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MoneyDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MoneyDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CategoryDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.tabList.ResumeLayout(False)
         Me.tabSummary.ResumeLayout(False)
         CType(Me.SumDgv, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SummaryDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CategoryDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SumDataTableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SummaryDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

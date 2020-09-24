@@ -145,4 +145,55 @@
     Private Sub buttonDelete_Click(sender As Object, e As EventArgs) Handles buttonDelete.Click
         DeleteData()
     End Sub
+
+    Private Sub CalcSummary()
+        Dim expression As String
+        SummaryDataSet.SumDataTable.Clear()
+        For Each drMoney As MoneyDataSet.moneyDataTableRow _
+                In MoneyDataSet.moneyDataTable
+            expression = "日付= '" _
+                       + drMoney.日付.ToShortDateString() _
+                       + "'"
+            Dim curDR() As SummaryDataSet.SumDataTableRow _
+                = CType(SummaryDataSet.SumDataTable.Select(expression),
+                        SummaryDataSet.SumDataTableRow())
+            If curDR.Length = 0 Then
+                If (CType(CategoryDataSet1.CategoryDataTable.Select _
+                    ("分類='" & drMoney.分類 & "'"),
+                    CategoryDataSet.CategoryDataTableRow())(0).入出金分類 = "入金") Then
+                    SummaryDataSet.SumDataTable.AddSumDataTableRow(
+                        drMoney.日付, drMoney.金額, 0)
+                ElseIf (CType(CategoryDataSet1.CategoryDataTable.Select _
+                    ("分類='" & drMoney.分類 & "'"),
+                    CategoryDataSet.CategoryDataTableRow())(0).入出金分類 = "出金") Then
+                    SummaryDataSet.SumDataTable.AddSumDataTableRow(
+                        drMoney.日付, 0, drMoney.金額)
+
+                End If
+            Else
+                If (CType(CategoryDataSet1.CategoryDataTable.Select _
+                    ("分類='" & drMoney.分類 & "'"),
+                    CategoryDataSet.CategoryDataTableRow())(0).入出金分類 = "入金") Then
+                    curDR(0).入金合計 += drMoney.金額
+
+                ElseIf (CType(CategoryDataSet1.CategoryDataTable.Select _
+                    ("分類='" & drMoney.分類 & "'"),
+                    CategoryDataSet.CategoryDataTableRow())(0).入出金分類 = "入金") Then
+                    curDR(0).出金合計 += drMoney.金額
+                End If
+            End If
+        Next
+    End Sub
+
+    Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
+        CalcSummary()
+    End Sub
+
+    Private Sub 一覧表示ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 一覧表示ToolStripMenuItem.Click
+        TabControl1.SelectTab(tabList)
+    End Sub
+
+    Private Sub 集計表示SToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 集計表示SToolStripMenuItem.Click
+        TabControl1.SelectTab(tabSummary)
+    End Sub
 End Class

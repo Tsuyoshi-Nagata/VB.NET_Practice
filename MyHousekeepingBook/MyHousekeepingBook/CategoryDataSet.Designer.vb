@@ -285,7 +285,7 @@ Partial Public Class CategoryDataSet
         
         Private column分類 As Global.System.Data.DataColumn
         
-        Private column入金分類 As Global.System.Data.DataColumn
+        Private column入出金分類 As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
@@ -332,9 +332,9 @@ Partial Public Class CategoryDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public ReadOnly Property 入金分類Column() As Global.System.Data.DataColumn
+        Public ReadOnly Property 入出金分類Column() As Global.System.Data.DataColumn
             Get
-                Return Me.column入金分類
+                Return Me.column入出金分類
             End Get
         End Property
         
@@ -375,9 +375,9 @@ Partial Public Class CategoryDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddCategoryDataTableRow(ByVal 分類 As String, ByVal 入金分類 As String) As CategoryDataTableRow
+        Public Overloads Function AddCategoryDataTableRow(ByVal 分類 As String, ByVal 入出金分類 As String) As CategoryDataTableRow
             Dim rowCategoryDataTableRow As CategoryDataTableRow = CType(Me.NewRow,CategoryDataTableRow)
-            Dim columnValuesArray() As Object = New Object() {分類, 入金分類}
+            Dim columnValuesArray() As Object = New Object() {分類, 入出金分類}
             rowCategoryDataTableRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowCategoryDataTableRow)
             Return rowCategoryDataTableRow
@@ -401,7 +401,7 @@ Partial Public Class CategoryDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Friend Sub InitVars()
             Me.column分類 = MyBase.Columns("分類")
-            Me.column入金分類 = MyBase.Columns("入金分類")
+            Me.column入出金分類 = MyBase.Columns("入出金分類")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -409,8 +409,8 @@ Partial Public Class CategoryDataSet
         Private Sub InitClass()
             Me.column分類 = New Global.System.Data.DataColumn("分類", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.column分類)
-            Me.column入金分類 = New Global.System.Data.DataColumn("入金分類", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.column入金分類)
+            Me.column入出金分類 = New Global.System.Data.DataColumn("入出金分類", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.column入出金分類)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -572,16 +572,16 @@ Partial Public Class CategoryDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Property 入金分類() As String
+        Public Property 入出金分類() As String
             Get
                 Try 
-                    Return CType(Me(Me.tableCategoryDataTable.入金分類Column),String)
+                    Return CType(Me(Me.tableCategoryDataTable.入出金分類Column),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("テーブル 'CategoryDataTable' にある列 '入金分類' の値は DBNull です。", e)
+                    Throw New Global.System.Data.StrongTypingException("テーブル 'CategoryDataTable' にある列 '入出金分類' の値は DBNull です。", e)
                 End Try
             End Get
             Set
-                Me(Me.tableCategoryDataTable.入金分類Column) = value
+                Me(Me.tableCategoryDataTable.入出金分類Column) = value
             End Set
         End Property
         
@@ -599,14 +599,14 @@ Partial Public Class CategoryDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Function Is入金分類Null() As Boolean
-            Return Me.IsNull(Me.tableCategoryDataTable.入金分類Column)
+        Public Function Is入出金分類Null() As Boolean
+            Return Me.IsNull(Me.tableCategoryDataTable.入出金分類Column)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Sub Set入金分類Null()
-            Me(Me.tableCategoryDataTable.入金分類Column) = Global.System.Convert.DBNull
+        Public Sub Set入出金分類Null()
+            Me(Me.tableCategoryDataTable.入出金分類Column) = Global.System.Convert.DBNull
         End Sub
     End Class
     
